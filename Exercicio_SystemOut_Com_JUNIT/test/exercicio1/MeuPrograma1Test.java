@@ -37,7 +37,9 @@ public class MeuPrograma1Test {
         String[] args = null;
         MeuPrograma1.main(args);
         String content = outContent.toString();
-        content = content.replaceAll("\n", "");
+        content = content.replaceAll("\n", "");                
+        content = content.replaceAll("\r" , "");
+        content = content.replaceAll(" " , "");
         assertEquals("Minha primeira aplicação Java!", content);
     }
 

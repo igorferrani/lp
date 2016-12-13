@@ -32,7 +32,9 @@ public class MeuPrograma3Test {
         String[] args = null;
         exercicio3.MeuPrograma3.main(args);
         String content = outContent.toString();
-        content = content.replaceAll("\n", "");
+        content = content.replaceAll("\n", "");                
+        content = content.replaceAll("\r" , "");
+        content = content.replaceAll(" " , "");
         assertEquals("Olá Mundo.Até logo", content);
     }
 }

@@ -34,7 +34,9 @@ public class MeuPrograma4Test {
         String[] args = null;
         exercicio4.MeuPrograma4.main(args);
         String content = outContent.toString();
-        content = content.replaceAll("\n", "");
+        content = content.replaceAll("\n", "");        
+        content = content.replaceAll("\r" , "");
+        content = content.replaceAll(" " , "");
         assertEquals("Olá Mundo.Até logo.Estou de volta", content);    
     }    
 }
