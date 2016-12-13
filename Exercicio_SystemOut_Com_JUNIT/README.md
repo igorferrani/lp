@@ -1,6 +1,5 @@
-//aula01
 
-Exercício Aula 1
+#Exercício com system out do java e testes com junit
 
 
 1) Rode o exemplo1.MeuPrograma1.java
