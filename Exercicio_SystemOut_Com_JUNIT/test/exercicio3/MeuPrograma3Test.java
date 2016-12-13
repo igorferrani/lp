@@ -7,9 +7,9 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class MeuProgramaTest {
+public class MeuPrograma3Test {
 
-    public MeuProgramaTest() {
+    public MeuPrograma3Test() {
     }
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();

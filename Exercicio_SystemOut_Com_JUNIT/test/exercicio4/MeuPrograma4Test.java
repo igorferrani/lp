@@ -1,23 +1,20 @@
-package exercicio1;
+
+package exercicio4;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class MeuProgramaTest {
 
-    public MeuProgramaTest() {
+public class MeuPrograma4Test {
+    
+    public MeuPrograma4Test() {
     }
-
-    @BeforeClass
-    public static void setUpClass() {
-    }
-
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    
+       private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Before
     public void setUpStreams() {
@@ -33,12 +30,11 @@ public class MeuProgramaTest {
      * Test of main method, of class MeuPrograma.
      */
     @Test
-    public void testMain() {
+    public void testMain() {        
         String[] args = null;
-        MeuPrograma1.main(args);
+        exercicio4.MeuPrograma4.main(args);
         String content = outContent.toString();
         content = content.replaceAll("\n", "");
-        assertEquals("Minha primeira aplicação Java!", content);
-    }
-
+        assertEquals("Olá Mundo.Até logo.Estou de volta", content);    
+    }    
 }
