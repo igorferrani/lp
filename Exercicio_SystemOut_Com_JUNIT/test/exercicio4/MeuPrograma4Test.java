@@ -14,7 +14,7 @@ public class MeuPrograma4Test {
     public MeuPrograma4Test() {
     }
     
-       private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Before
     public void setUpStreams() {

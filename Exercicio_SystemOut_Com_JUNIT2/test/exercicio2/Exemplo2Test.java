@@ -1,17 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package exercicio2;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import org.junit.After;
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -26,29 +20,31 @@ public class Exemplo2Test {
     public static void setUpClass() {
     }
 
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     @Before
     public void setUpStreams() {
-        System.setOut(new PrintStream(outContent));
     }
 
     @After
     public void cleanUpStreams() {
-        System.setOut(null);
     }
 
     /**
      * Test of main method, of class MeuPrograma.
      */
     @Test
-    public void testMain() {        
-        String[] args = null;
-        Exemplo2.main(args);
-        String content = outContent.toString();        
-        if(content.contains("2100.5") && content.contains("101010"))
-            assertEquals(true, true);
-        else fail(content + " mas deveria ser 2100.5 101010");                     
+    public void testMain() { 
+        
+        double resultado = Exemplo2.calculaSalarioLiquido(2000);
+        assertEquals(resultado, 1800, 0.01);  
+        resultado = Exemplo2.calculaSalarioLiquido(4000);
+        assertEquals(resultado, 3200,0.01);  
+        resultado = Exemplo2.calculaSalarioLiquido(8000);
+        assertEquals(resultado, 6400,0.01);  
+        resultado = Exemplo2.calculaSalarioLiquido(1000);       
+        assertEquals(resultado, 950, 0.01);  
+        resultado = Exemplo2.calculaSalarioLiquido(800);
+        assertEquals(resultado, 760, 0.01); 
     }
     
     @After
