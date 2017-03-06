@@ -45,6 +45,10 @@ Não serão aceitos trabalhos com mais de uma semana de atraso. <br>
 A cada dia de atraso será descontado um ponto do trabalho. <br>
 O trabalho deve ser enviado utilizando o github.com. O link do github do projeto deve ser enviado para o moodle.<br>
 O sistema deve ser feito utilizando a linguagem java<br>
+Você deve utilizar a biblioteca slick2d ou alguma outra biblioteca de jogo de java<br>
+Você pode utilizar como base o projeto visto em sala de aula https://github.com/felipefo/lp/tree/master/JogoComJava<br>
+
+
 
 # Critérios de Avaliação 
 
