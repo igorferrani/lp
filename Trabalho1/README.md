@@ -61,7 +61,7 @@ O sistema deve ser feito utilizando a linguagem java<br>
 | Apresentação para o professor | 10%  | 
 
 
-# Tela de exemplo do  sistema
+# Tela de exemplo do jogo
 
 ![alt text](https://github.com/felipefo/lp/blob/master/Trabalho1/imagem_jogo.png)
 
