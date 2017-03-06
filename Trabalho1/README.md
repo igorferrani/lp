@@ -44,5 +44,5 @@ O sistema deve ser feito utilizando a linguagem java<br>
 
 # Tela de exemplo do  sistema
 
-![alt text](https://github.com/felipefo/lp/Trabalho1/imagen_jogo.png)
+![alt text](https://github.com/felipefo/lp/Trabalho1/imagem_jogo.png)
 
