@@ -1,6 +1,16 @@
 
 Especificação do Trabalho de Linguagem de Programação
 
+# Datas
+
+## Primeira entrega(Parcial)
+
+25/04/2017
+
+## Segunda entrega 
+25/05/2017
+
+
 # Descrição do Mini-Mundo
 
 O objetivo desse trabalho é criar um jogo em que se possa jogar em dupla. 
