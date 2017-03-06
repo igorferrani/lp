@@ -3,12 +3,17 @@ Especificação do Trabalho de Linguagem de Programação
 
 # Datas
 
-## Primeira entrega(Parcial)
+### Primeira entrega(Parcial)
 
-13/04/2017
+30/03/2017
 
-## Segunda entrega 
-25/05/2017
+### Segunda entrega(Parcial)
+
+20/04/2017
+
+
+### Terceira entrega(Final)
+11/05/2017
 
 
 # Descrição do Mini-Mundo
