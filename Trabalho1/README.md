@@ -16,9 +16,11 @@ O jogo acaba quando um jogodar errar a bora e ela atingir o final do lado da tel
 | RF002 | O sistema deve permitir ao usuário reiniciar o jogo a qualquer momento | 94 |
 | RF003 | O sistema deve terminar o jogo e informar o vencedor caso a bola atinja o final da tela de um dos jogadoreso | 99 |
 | RF004 | O sistema deve permitir que o usuário escolha jogar em dupla ou sozinho | 98 |
-| RF005 | O sistema deve permitir exibir um plano de fundo | 96 |
-| RF006 | O sistema deve permitir exibir uma mensagem de quem ganhou ao final da partida | 95 |
-| RF007 | O sistema deve permitir que os usuários joguem | 97 |
+| RF005 | O sistema deve permitir exibir um plano de fundo | 95 |
+| RF006 | O sistema deve permitir exibir uma mensagem de quem ganhou ao final da partida | 93 |
+| RF007 | O sistema deve permitir que os usuários joguem | 96 |
+| RF008 | O sistema deve mudar a trajetória da bola de acordo com a posição que o usuário acerta a bola | 97 |
+
 
 
 # Regras 
@@ -33,12 +35,14 @@ O sistema deve ser feito utilizando a linguagem java<br>
 
 | Funcionalidade | % Nota| 
 | --- | --- |
-| RF001 | 20% |
+| RF001 | 10% |
 | RF002 | 10%  |
-| RF003 | 10%  | 
+| RF003 | 5%  | 
 | RF004 | 20%  |
-| RF005 | 10%  |
-| RF006 | 20%  | 
+| RF005 | 5%  |
+| RF006 | 10%  | 
+| RF007 | 20%  | 
+| RF008 | 10%  | 
 | Apresentação para o professor | 10%  | 
 
 
