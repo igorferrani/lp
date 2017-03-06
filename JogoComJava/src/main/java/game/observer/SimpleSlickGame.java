@@ -124,7 +124,7 @@ public class SimpleSlickGame extends BasicGame {
         if (input.isKeyDown(Input.KEY_RIGHT))
             this.heroi.setPosX(this.heroi.getPosX() + 2);        
         timeCount++;
-        if (timeCount == 10){ 
+        if (timeCount == 50){ 
             heroi.noificarTodos();                    
             inimigo1.noificarTodos();
             inimigo2.noificarTodos();
