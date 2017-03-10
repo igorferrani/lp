@@ -5,15 +5,15 @@ Especificação do Trabalho de Linguagem de Programação
 
 ### Primeira entrega(Parcial)
 
-30/03/2017
+07/04/2017
 
 ### Segunda entrega(Parcial)
 
-20/04/2017
+31/04/2017
 
 
 ### Terceira entrega(Final)
-11/05/2017
+18/05/2017
 
 
 # Descrição do Mini-Mundo
@@ -40,14 +40,14 @@ O jogo acaba quando um jogodar errar a bora e ela atingir o final do lado da tel
 
 # Regras 
 
-O trabalho deve ser feito em dupla. <br>
+O trabalho deve ser feito em dupla ou trio. <br>
 Não serão aceitos trabalhos com mais de uma semana de atraso. <br>
 A cada dia de atraso será descontado um ponto do trabalho. <br>
 O trabalho deve ser enviado utilizando o github.com. O link do github do projeto deve ser enviado para o moodle.<br>
 O sistema deve ser feito utilizando a linguagem java<br>
-Você deve utilizar a biblioteca slick2d ou alguma outra biblioteca de jogo de java<br>
+Você pode utilizar a biblioteca slick2d ou alguma outra biblioteca de jogo de java<br>
 Você pode utilizar como base o projeto visto em sala de aula https://github.com/felipefo/lp/tree/master/JogoComJava<br>
-
+O trabalho vale 30 pontos.
 
 
 # Critérios de Avaliação 
