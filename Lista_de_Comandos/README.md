@@ -12,7 +12,7 @@ String nome = "Joao ";
 int vetor[] = new int[4];
 ```
 
-02- Exemplo Condicional IF,  Else if e Else.
+<strong>02- Exemplo Condicional IF,  Else if e Else</strong>
 ```
 double nota;
 if(nota == 10){
