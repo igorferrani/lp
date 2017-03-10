@@ -5,14 +5,14 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author (seu nome) 
  * @version (número de versão ou data)
  */
-public class Questao
+public class QuestaoSoma
 {
     // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
     private int operando1;
     private int operando2;
 
     
-    public Questao()
+    public QuestaoSoma()
     {
         // inicializa variáveis de instância
         operando1 = ThreadLocalRandom.current().nextInt(0, 100);

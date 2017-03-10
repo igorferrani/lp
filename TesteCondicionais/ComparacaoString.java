@@ -14,6 +14,8 @@ public class ComparacaoString
         }
         else if(cidade.equalsIgnoreCase("Serra")){
             JOptionPane.showMessageDialog(null, "Custo do frete é R$ 50,00");
-        }        
+        }else{
+            JOptionPane.showMessageDialog(null, "Cidade não encontrada");
+        }
     }
 }

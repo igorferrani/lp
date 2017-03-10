@@ -19,10 +19,8 @@ public class Jogo
             testeResposta = true;
         else testeResposta =  false;        
         if(testeResposta)
-            JOptionPane.showMessageDialog(null, "Você acertou!", "Question",
-            JOptionPane.QUESTION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Você acertou!");
         else
-            JOptionPane.showMessageDialog(null, "Você errou!", "Question",
-            JOptionPane.QUESTION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Você errou!");
     }            
 }
