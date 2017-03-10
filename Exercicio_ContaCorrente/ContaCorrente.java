@@ -11,13 +11,14 @@ public class ContaCorrente
     private int agencia;
     private int banco;
     private double saldo;
-    
-    public ContaCorrente(int banco, agencia, numeroConta)
+    String nomeCorrentista;
+    public ContaCorrente(int banco, agencia, numeroConta, 
+    String nomeCorrentista)
     {
         this.saldo = 0;        
         this.banco = banco;
         this.agencia = agencia;
-        this.numeroConta = numeroConta;
+        this.numeroConta = numeroConta;        
     }
     public realizarSaque(double valor){
         this.saldo = this.saldo - valor;
