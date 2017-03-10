@@ -21,5 +21,9 @@ public class ContaCorrente
     }
     public realizarSaque(double valor){
         this.saldo = this.saldo - valor;
+    }    
+    public realizarDeposito(double valor){
+        this.saldo = this.saldo + valor;
     }
 }
+
