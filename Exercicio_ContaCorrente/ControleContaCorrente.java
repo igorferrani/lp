@@ -1,12 +1,14 @@
 
+import java.util.ArrayList;
 import javax.swing.*;
 public class ControleContaCorrente
 {
-    public void  criaContaCorrente(String nomeCompleto, String cpf)
+    private ArrayList<ContaCorrente> listaContas = new ArrayList<ContaCorrente>();
+    
+    public void  criaContaCorrente(int banco, int agencia, 
+    int numeroConta,String nomeCompleto)
     {
-      ContaCorrente conta1= new ContaCorrente();
-      
-        
-        
+      ContaCorrente conta= new ContaCorrente(banco,agencia,numeroConta,nomeCompleto);            
+      listaContas.add(conta);
     }
 }

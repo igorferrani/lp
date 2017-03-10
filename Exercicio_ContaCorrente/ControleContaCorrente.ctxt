@@ -1,4 +1,4 @@
 #BlueJ class context
-comment0.params=nomeCompleto\ cpf
-comment0.target=void\ criaContaCorrente(java.lang.String,\ java.lang.String)
+comment0.params=banco\ agencia\ numeroConta\ nomeCompleto
+comment0.target=void\ criaContaCorrente(int,\ int,\ int,\ java.lang.String)
 numComments=1
