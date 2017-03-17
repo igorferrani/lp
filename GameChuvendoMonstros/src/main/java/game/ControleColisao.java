@@ -1,4 +1,4 @@
-package game.observer;
+package game;
 
 import java.awt.Rectangle;
 import org.newdawn.slick.GameContainer;

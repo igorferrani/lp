@@ -1,5 +1,5 @@
 
-package game.observer;
+package game;
 
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;

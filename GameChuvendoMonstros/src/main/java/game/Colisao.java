@@ -1,5 +1,5 @@
 
-package game.observer;
+package game;
 
 /**
  *
