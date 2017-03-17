@@ -6,7 +6,7 @@ public class ListaDeAlunos
     public void  listaDeAlunos()
     {
         String resposta="";
-        float nota1=0;float nota2=0;float media=0;int quantidadeAlunos;   
+        int quantidadeAlunos;   
         resposta = JOptionPane.showInputDialog("Quantidade de Alunos da lista:");
         quantidadeAlunos = Integer.parseInt(resposta);             
         for(int numeroAlunos=0; numeroAlunos<=quantidadeAlunos;numeroAlunos++){
@@ -15,8 +15,7 @@ public class ListaDeAlunos
         }
         for(int numeroAlunos=0; numeroAlunos<=listaAlunos.size();numeroAlunos++){
             JOptionPane.showMessageDialog(null, 
-            "Nome do aluno:" + listaAlunos.get(numeroAlunos));           
-            listaAlunos.add(resposta);
+            "Nome do aluno:" + listaAlunos.get(numeroAlunos));                       
         }
     }
 }

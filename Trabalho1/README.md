@@ -5,7 +5,7 @@ Especificação do Trabalho de Linguagem de Programação
 
 ### Primeira entrega(Parcial)
 
-07/04/2017
+17/04/2017
 
 ### Segunda entrega(Parcial)
 
