@@ -1,10 +1,7 @@
 
 package game;
 
-/**
- *
- * @author felip
- */
+
 public class Colisao   implements Observador{
 
     @Override
