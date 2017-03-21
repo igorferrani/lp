@@ -23,8 +23,7 @@ public class ManipulaCSVUsuario {
                 Usuario usuario = new Usuario();
                 usuario.nomeCompleto = arrayLinhaCSV[0];
                 usuario.login = arrayLinhaCSV[1];
-                usuario.senha = arrayLinhaCSV[2];
-                usuario.email = arrayLinhaCSV[3];
+                usuario.senha = arrayLinhaCSV[2];         
                 listaUsuarios.add(usuario);
             }
         } catch (FileNotFoundException e) {
@@ -50,8 +49,6 @@ public class ManipulaCSVUsuario {
             writer.append(usuario.login);
             writer.append(',');            
             writer.append(usuario.senha);
-            writer.append(',');            
-            writer.append(usuario.email);            
             writer.append('\n');
             writer.flush();
             writer.close();

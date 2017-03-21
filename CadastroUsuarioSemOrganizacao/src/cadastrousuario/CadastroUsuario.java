@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package cadastrousuario;
 
 import java.io.BufferedReader;
@@ -13,10 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author felip
- */
+
 public class CadastroUsuario {
 
     /**
@@ -38,9 +31,10 @@ public class CadastroUsuario {
             String senha = JOptionPane.showInputDialog("Senha:");
             while(senha.length() < 8){
                 senha = JOptionPane.showInputDialog("Senha:");
+                if(senha.length() < 8){
+                    JOptionPane.showMessageDialog(null, "A senha deve ter mais de 8 caracteres");
+                }
             }
-            
-            
             saveUsuario(nomeCompleto, login, senha);
         } else if (opcaoEscolhida == 2) {
             ArrayList listaUsuarios = readCSVFile();

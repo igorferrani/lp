@@ -6,10 +6,9 @@ public class Usuario {
     String login;
     String senha;    
     String nomeCompleto;
-    String email;
 
     public String imprimeUsuario(){
-        String dados ="Nome:" + nomeCompleto + "\n Login:" + login + "\n senha:" + senha+ "\n email:" + email;
+        String dados ="Nome:" + nomeCompleto + "\n Login:" + login + "\n senha:" + senha;
         return dados;
     }
 }

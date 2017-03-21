@@ -24,7 +24,6 @@ public class CadastroUsuario {
             usuario.nomeCompleto = JOptionPane.showInputDialog("Nome completo:");
             usuario.login = JOptionPane.showInputDialog("Login:");
             usuario.senha = JOptionPane.showInputDialog("Senha:");            
-            usuario.email = JOptionPane.showInputDialog("Email:");            
             ManipulaCSVUsuario.saveUsuario(usuario);
         }else if (opcaoEscolhida == 2){
             listar.listarJOptionPane();
