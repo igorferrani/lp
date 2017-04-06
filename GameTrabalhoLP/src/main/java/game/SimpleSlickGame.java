@@ -93,7 +93,7 @@ public class SimpleSlickGame extends BasicGame {
          //aqui você precisar fazer a raquete da esquerda se movimentar também 
          //para isso utilize, por exemplo, a letra "a" para esquerda, "d" para direita
          //"w" para ir para cima e "s" para ir para baixo.
-                 
+         
         Input input = gc.getInput();
         if (input.isKeyDown(Input.KEY_UP))
             this.raqueteDireita.setPosY(this.raqueteDireita.getPosY() - 2);        
