@@ -47,6 +47,7 @@ O trabalho deve ser enviado utilizando o github.com. O link do github do projeto
 O sistema deve ser feito utilizando a linguagem java<br>
 Você pode utilizar a biblioteca slick2d ou alguma outra biblioteca de jogo de java<br>
 Você pode utilizar como base o projeto visto em sala de aula https://github.com/felipefo/lp/tree/master/GameChuvendoMonstros<br>
+Você pode utilizar como base o projeto visto em sala de aulahttps://github.com/felipefo/lp/tree/master/GameTrabalhoLP
 O trabalho vale 30 pontos.
 
 
