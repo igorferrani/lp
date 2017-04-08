@@ -4,16 +4,32 @@ import java.util.Iterator;
 public class HashMapClientes
 {
     HashMap hashMapClientes = new HashMap ();
-    public HashMapClientes()
-    {
-    }
+    ArrayList listaClientes = new ArrayList();
     public void adicionaCliente(String nome, String dtNascimento, String identidade){
         Cliente novoCliente = new Cliente();
         novoCliente.nome = nome;
         novoCliente.identidade = identidade;
         novoCliente.dtNascimento = dtNascimento;
         hashMapClientes.put(novoCliente.nome , novoCliente);        
+        listaClientes.add(novoCliente);
+        
     }
+    
+    public Cliente pegarClientePorNome(String nome){
+        Cliente buscaCliente = hashMapClientes.get(nome);
+        return buscaCliente;
+    }
+    
+    public Cliente pegarClientePorNomeArray(String nome){
+        for(int i=0; i<= listaClientes.size();i++){
+         Cliente buscaCliente = (Cliente)listaClientes.get(i);
+         if(buscaCliente.nome.equalsIgnoreCase(nome)){
+             return buscaCliente;
+        }
+        return null;
+        
+    }
+    
     public void listarClientes(){
         
         if( hashMapClientes.keySet().size() == 0){

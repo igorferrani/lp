@@ -15,8 +15,5 @@ public class Cliente
     /**
      * Constructor for objects of class Cliente
      */
-    public Cliente()
-    {
-    }
 
 }
