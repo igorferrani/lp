@@ -1,13 +1,13 @@
 
-EspecificaÁ„o do Trabalho de Linguagem de ProgramaÁ„o
+Especifica√ß√£o do Trabalho de Linguagem de Programa√ß√£o
 
 # Datas
 
 ### Primeira entrega(Parcial)
 
-17/04/2017
+20/04/2017
 
-| RF001 | O sistema deve permitir ao usu·rio fazer movimentos verticais |
+| RF001 | O sistema deve permitir ao usu√°rio fazer movimentos verticais |
 
 
 ### Segunda entrega(Parcial)
@@ -15,55 +15,55 @@ EspecificaÁ„o do Trabalho de Linguagem de ProgramaÁ„o
 31/04/2017
 
 | RF003 | O sistema deve terminar o jogo e informar o vencedor caso a bola atinja o final da tela de um dos jogadoreso | 
-| RF007 | O sistema deve permitir que os usu·rios joguem | 
-| RF008 | O sistema deve mudar a trajetÛria da bola de acordo com a posiÁ„o que o usu·rio acerta a bola | 
+| RF007 | O sistema deve permitir que os usu√°rios joguem | 
+| RF008 | O sistema deve mudar a trajet√≥ria da bola de acordo com a posi√ß√£o que o usu√°rio acerta a bola | 
 
 
 ### Terceira entrega(Final)
 18/05/2017
 
-| RF002 | O sistema deve permitir ao usu·rio reiniciar o jogo a qualquer momento |
-| RF004 | O sistema deve permitir que o usu·rio escolha jogar em dupla ou sozinho |
+| RF002 | O sistema deve permitir ao usu√°rio reiniciar o jogo a qualquer momento |
+| RF004 | O sistema deve permitir que o usu√°rio escolha jogar em dupla ou sozinho |
 | RF005 | O sistema deve permitir exibir um plano de fundo | 
 | RF006 | O sistema deve permitir exibir uma mensagem de quem ganhou ao final da partida | 
 
 
-# DescriÁ„o do Mini-Mundo
+# Descri√ß√£o do Mini-Mundo
 
-O objetivo desse trabalho È criar um jogo em que se possa jogar em dupla. 
+O objetivo desse trabalho √© criar um jogo em que se possa jogar em dupla. 
 Cada jogador vai poder controlar uma barrinha que vai servir para rebater uma bola. 
 O jogo acaba quando um jogodar errar a bora e ela atingir o final do lado da tela do jogador. 
 
 
 # Requisitos do Sistema
 
-| ID | DescriÁ„o |  
+| ID | Descri√ß√£o |  
 | --- | --- | 
-| RF001 | O sistema deve permitir ao usu·rio fazer movimentos verticais |
-| RF002 | O sistema deve permitir ao usu·rio reiniciar o jogo a qualquer momento |
+| RF001 | O sistema deve permitir ao usu√°rio fazer movimentos verticais |
+| RF002 | O sistema deve permitir ao usu√°rio reiniciar o jogo a qualquer momento |
 | RF003 | O sistema deve terminar o jogo e informar o vencedor caso a bola atinja o final da tela de um dos jogadoreso | 
-| RF004 | O sistema deve permitir que o usu·rio escolha jogar em dupla ou sozinho |
+| RF004 | O sistema deve permitir que o usu√°rio escolha jogar em dupla ou sozinho |
 | RF005 | O sistema deve permitir exibir um plano de fundo | 
 | RF006 | O sistema deve permitir exibir uma mensagem de quem ganhou ao final da partida | 
-| RF007 | O sistema deve permitir que os usu·rios joguem | 
-| RF008 | O sistema deve mudar a trajetÛria da bola de acordo com a posiÁ„o que o usu·rio acerta a bola | 
+| RF007 | O sistema deve permitir que os usu√°rios joguem | 
+| RF008 | O sistema deve mudar a trajet√≥ria da bola de acordo com a posi√ß√£o que o usu√°rio acerta a bola | 
 
 
 
 # Regras 
 
 O trabalho deve ser feito em dupla ou trio. <br>
-N„o ser„o aceitos trabalhos com mais de uma semana de atraso. <br>
-A cada dia de atraso ser· descontado um ponto do trabalho. <br>
+N√£o ser√£o aceitos trabalhos com mais de uma semana de atraso. <br>
+A cada dia de atraso ser√° descontado um ponto do trabalho. <br>
 O trabalho deve ser enviado utilizando o github.com. O link do github do projeto deve ser enviado para o moodle.<br>
 O sistema deve ser feito utilizando a linguagem java<br>
-VocÍ pode utilizar a biblioteca slick2d ou alguma outra biblioteca de jogo de java<br>
-VocÍ pode utilizar como base o projeto visto em sala de aula https://github.com/felipefo/lp/tree/master/GameChuvendoMonstros<br>
-VocÍ pode utilizar como base o projeto visto em sala de aulahttps://github.com/felipefo/lp/tree/master/GameTrabalhoLP
+Voc√™ pode utilizar a biblioteca slick2d ou alguma outra biblioteca de jogo de java<br>
+Voc√™ pode utilizar como base o projeto visto em sala de aula https://github.com/felipefo/lp/tree/master/GameChuvendoMonstros<br>
+Voc√™ pode utilizar como base o projeto visto em sala de aulahttps://github.com/felipefo/lp/tree/master/GameTrabalhoLP
 O trabalho vale 30 pontos.
 
 
-# CritÈrios de AvaliaÁ„o 
+# Crit√©rios de Avalia√ß√£o 
 
 | Funcionalidade | % Nota| 
 | --- | --- |
@@ -75,7 +75,7 @@ O trabalho vale 30 pontos.
 | RF006 | 10%  | 
 | RF007 | 20%  | 
 | RF008 | 10%  | 
-| ApresentaÁ„o para o professor | 10%  | 
+| Apresenta√ß√£o para o professor | 10%  | 
 
 
 # Tela de exemplo do jogo
