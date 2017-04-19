@@ -61,7 +61,7 @@ public class Bola  extends Observavel implements Observador{
             this.operador = -1;
         }
         else{
-            if(this.posX <= -10 && this.operador == -1){
+            if(this.posX <= -20 && this.operador == -1){
                 this.operador = 1;
             }
         }
@@ -69,7 +69,9 @@ public class Bola  extends Observavel implements Observador{
         //ThreadLocalRandom.current().nextInt(0, 400);
         //pega uma posicao randomica entre 0 e 400 já vimos em sala de aula.
         //this.posY = 200;
-        this.posY = ThreadLocalRandom.current().nextInt(0, 400);
+        
+        if(this.posX <= 0 || this.posX >= 640)
+            this.posY = ThreadLocalRandom.current().nextInt(0, 400);
         this.posX = this.posX + (this.operador * 2);
         
         
