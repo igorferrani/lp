@@ -35,9 +35,19 @@ public class ControleColisao  extends Colisao{
                     bola.getImage().getWidth() - 20, bola.getImage().getHeight() - 20);
             Rectangle third = new Rectangle(raqueteEsquerda.getPosX(), raqueteEsquerda.getPosY(),
                     raqueteEsquerda.getImage().getWidth() - 20, raqueteEsquerda.getImage().getHeight() - 20);
-            if (first.intersects(second) || first.intersects(third)) {
+            
+            // ao encosta na raquete direita
+            if (first.intersects(second) || third.intersects(second)) {
                 //controller.pause();
-            }
+                
+                /*
+                 * @TODO Modificar logica para redirecionar a bola
+                 */
+                if(bola.direcao > 0)
+                    bola.direcao = -1;
+                else
+                    bola.direcao = 1;
+            } 
         }
     }    
     private void iniciaInformacoesRaqueteEBola(Observavel ob){        

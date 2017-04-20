@@ -15,9 +15,8 @@ public class Bola  extends Observavel implements Observador{
     Image image;
     int posX;
     int posY;
-    int operador = 1;
-    int aux;
-    int operador2;
+    int direcao = 1;
+    
     public Bola(String pathImage, int posX, int posY){        
         this.posX = posX;
         this.posY = posY;
@@ -56,26 +55,23 @@ public class Bola  extends Observavel implements Observador{
         //aqui você precisa fazer a bola de movimentar de um lado para o outro...        
         //Como ? seu trabalho...
         //MOVIMENTO DA ESQUERDA PARA A DIREITA
-        if(this.posX >= 640-30 && this.operador == 1){
+        if(this.posX >= 640+20 && this.direcao == 1){
             //this.posX = -20; // reposiciona a bolinha -20 do ponto 0 zero
-            this.operador = -1;
+            this.direcao = -1;
+            this.posY = ThreadLocalRandom.current().nextInt(0, 400);
         }
-        else{
-            if(this.posX <= -20 && this.operador == -1){
-                this.operador = 1;
-            }
+        else if(this.posX <= -50 && this.direcao == -1){
+            this.direcao = 1;
+            this.posY = ThreadLocalRandom.current().nextInt(0, 400);
         }
         
         //ThreadLocalRandom.current().nextInt(0, 400);
         //pega uma posicao randomica entre 0 e 400 já vimos em sala de aula.
-        //this.posY = 200;
+        this.posY = 50;
         
-        if(this.posX <= 0 || this.posX >= 640)
-            this.posY = ThreadLocalRandom.current().nextInt(0, 400);
-        this.posX = this.posX + (this.operador * 2);
+        //if(this.posX <= 0 || this.posX >= 640)
         
         
-        aux = this.posX;
-        operador2 = operador;
+        this.posX = this.posX + (this.direcao * 2);
     }
 }
