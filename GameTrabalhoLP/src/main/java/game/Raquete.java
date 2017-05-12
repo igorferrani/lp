@@ -8,9 +8,10 @@ import org.newdawn.slick.SlickException;
 
 /**
  *
- * @author felipe
+ *
  */
-public class Raquete extends Observavel  {
+public class Raquete extends Observavel  
+{
    
     Image image;
     int posX;

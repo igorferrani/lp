@@ -7,9 +7,7 @@ import java.util.logging.Logger;
 import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 
-/**
- * @author felipe
- */
+
 public class Bola  extends Observavel implements Observador{
             
     Image image;
@@ -55,23 +53,19 @@ public class Bola  extends Observavel implements Observador{
         //aqui você precisa fazer a bola de movimentar de um lado para o outro...        
         //Como ? seu trabalho...
         //MOVIMENTO DA ESQUERDA PARA A DIREITA
-        if(this.posX >= 640+20 && this.direcao == 1){
+        if(this.posX >= 610+20 || this.posX <= - 10){
             //this.posX = -20; // reposiciona a bolinha -20 do ponto 0 zero
-            this.direcao = -1;
-            this.posY = ThreadLocalRandom.current().nextInt(0, 400);
-        }
-        else if(this.posX <= -50 && this.direcao == -1){
-            this.direcao = 1;
+            this.direcao *= -1;
             this.posY = ThreadLocalRandom.current().nextInt(0, 400);
         }
         
         //ThreadLocalRandom.current().nextInt(0, 400);
         //pega uma posicao randomica entre 0 e 400 já vimos em sala de aula.
-        this.posY = 50;
+        this.posY = 100;
         
         //if(this.posX <= 0 || this.posX >= 640)
         
         
-        this.posX = this.posX + (this.direcao * 2);
+        this.posX = this.posX + (this.direcao * 1);
     }
 }

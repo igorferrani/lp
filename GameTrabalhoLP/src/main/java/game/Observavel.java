@@ -2,11 +2,9 @@
 package game;
 import java.util.ArrayList;
 import java.util.List;
-/**
- * @author felipe
- * Você não precisa mexer nessa classe
- */
-public class Observavel  {
+
+public class Observavel  
+{
 
     List<Observador> observadores = new ArrayList();        
     public List<Observador> getMonitores() {

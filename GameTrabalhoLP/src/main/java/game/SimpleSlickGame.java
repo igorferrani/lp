@@ -24,7 +24,7 @@ public class SimpleSlickGame extends BasicGame {
 
     boolean ganhou=false;
     int time;
-  
+    //iniciando  as raquetes
     Raquete raqueteDireita;
     Raquete raqueteEsquerda;
 
@@ -36,11 +36,12 @@ public class SimpleSlickGame extends BasicGame {
     public void init(GameContainer gc) throws SlickException {
         
         try {
+            //atribuindo os caminhos das imagens e a posição inicial
             File file = new File(".");
             String filePath = file.getCanonicalPath();
             land = new Image(filePath + "\\src\\main\\java\\quadra.jpg");
-            raqueteDireita = new Raquete(filePath + "\\src\\main\\java\\raquete.png", 640-100, 240-50);
-            raqueteEsquerda = new Raquete(filePath + "\\src\\main\\java\\raquete.png", 0, 240-50);
+            raqueteDireita = new Raquete(filePath + "\\src\\main\\java\\raqueteEsquerda.png", 640-100, 240-50);
+            raqueteEsquerda = new Raquete(filePath + "\\src\\main\\java\\raqueteDireita.png", 0, 240-50);
             
             bola = new Bola(filePath + "\\src\\main\\java\\bola.png", 500, -100);
             gameover = new Image(filePath + "\\src\\main\\java\\gameover.png");
@@ -51,6 +52,10 @@ public class SimpleSlickGame extends BasicGame {
             raqueteEsquerda.addMonitores(bola);
             
             ControleColisao controleColisao = new ControleColisao(gc);
+            controleColisao.iniciaInformacoesRaqueteEBola(raqueteEsquerda, 0);
+            controleColisao.iniciaInformacoesRaqueteEBola(raqueteDireita, 1);
+            controleColisao.iniciaInformacoesRaqueteEBola(bola, 0);
+            
             raqueteDireita.addMonitores(controleColisao);
             raqueteEsquerda.addMonitores(controleColisao);
             bola.addMonitores(controleColisao);
@@ -61,7 +66,8 @@ public class SimpleSlickGame extends BasicGame {
     }
 
     @Override
-    public void render(GameContainer gc, Graphics g) throws SlickException {
+    public void render(GameContainer gc, Graphics g) throws SlickException 
+    {
         g.drawImage(land, 0, 0);
         g.drawString("Time : " + time/1000, 530, 20);
         raqueteDireita.render();
@@ -69,17 +75,23 @@ public class SimpleSlickGame extends BasicGame {
         bola.render(); 
        
         //limita o tempo do jogo em 100 segundos...
-        if(time/1000 >= 100){
+        //quando o tempo acabar ambos perdem(por enquanto)
+        if(time/1000 >= 100)
+        {
             gc.pause();
-            ganhouJogo.draw(200,200);
+            gameover.draw(215,150);
+            //ganhouJogo.draw(215,100);
         }
         
-        if(gc.isPaused())
-            gameover.draw(200,200);
+        //if(gc.isPaused()){
+           // gameover.draw(200,200);
+        //}
     }
 
-    public static void main(String[] args) {
-        try {
+    public static void main(String[] args) 
+    {
+        try 
+        {
             AppGameContainer appgc;
             appgc = new AppGameContainer(new SimpleSlickGame("Simple Slick Game"));
             appgc.setDisplayMode(640, 480, false);            
@@ -90,13 +102,14 @@ public class SimpleSlickGame extends BasicGame {
     }
 
     @Override
-    public void update(GameContainer gc, int i) throws SlickException {        
-        if(!gc.isPaused()){
+    public void update(GameContainer gc, int i) throws SlickException 
+    {        
+        if(!gc.isPaused())
+        {
             time += i;
 
             //aqui você precisar fazer a raquete da esquerda se movimentar também 
-            //para isso utilize, por exemplo, a letra "a" para esquerda, "d" para direita
-            //"w" para ir para cima e "s" para ir para baixo.
+            //restringindo os limites de movimentacao das raquetes
 
            Input input = gc.getInput();
            if (input.isKeyDown(Input.KEY_W))
@@ -129,7 +142,8 @@ public class SimpleSlickGame extends BasicGame {
 
         
             timeCount++;
-            if (timeCount == 10){ 
+            if (timeCount == 1)
+            { 
                 raqueteDireita.noificarTodos();
                 raqueteEsquerda.noificarTodos();
                 bola.noificarTodos();
